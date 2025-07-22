@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  color: crimson;
+  font-family: "Georgia", serif;
+  background-image: url('img/image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.gate, .content {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px crimson;
+  max-width: 500px;
+  width: 90%;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 15px;
+  width: 80%;
+  background: #111;
+  border: 1px solid crimson;
+  color: white;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: crimson;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: darkred;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+  transition: text-decoration 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .gate, .content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+}
